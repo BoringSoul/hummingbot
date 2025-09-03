@@ -6,16 +6,16 @@ services:
     #   context: .
     #   dockerfile: Dockerfile
     volumes:
-      - ./conf:/home/andrew/data/hummingbot/conf
-      - ./conf/connectors:/home/andrew/data/hummingbot/conf/connectors
-      - ./conf/strategies:/home/andrew/data/hummingbot/conf/strategies
-      - ./conf/controllers:/home/andrew/data/hummingbot/conf/controllers
-      - ./conf/scripts:/home/andrew/data/hummingbot/conf/scripts
-      - ./logs:/home/andrew/data/hummingbot/logs
-      - ./data:/home/andrew/data/hummingbot/data
-      - ./certs:/home/andrew/data/hummingbot/certs
-      - ./scripts:/home/andrew/data/hummingbot/scripts
-      - ./controllers:/home/andrew/data/hummingbot/controllers
+      - ./conf:/home/hummingbot/conf
+      - ./conf/connectors:/home/hummingbot/conf/connectors
+      - ./conf/strategies:/home/hummingbot/conf/strategies
+      - ./conf/controllers:/home/hummingbot/conf/controllers
+      - ./conf/scripts:/home/hummingbot/conf/scripts
+      - ./logs:/home/hummingbot/logs
+      - ./data:/home/hummingbot/data
+      - ./certs:/home/hummingbot/certs
+      - ./scripts:/home/hummingbot/scripts
+      - ./controllers:/home/hummingbot/controllers
     logging:
       driver: "json-file"
       options:
